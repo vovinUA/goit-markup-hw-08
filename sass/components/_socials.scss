@@ -1,14 +1,13 @@
 .social {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     margin-top: 16px;
-    margin-left: 32px;
-    margin-right: 32px;
     gap: 10px;
-
-    @media screen and (min-width: $tablet) {
-        margin: 0px;
-        }
+    
+    &--footer {
+        margin-top: 0px;
+    }
 
     &__link {
     display: flex;
@@ -33,7 +32,6 @@
             justify-content: center;
             width: 44px;
             height: 44px;
-            margin: 0;
             border-radius: 50%;
             background-color: rgba(255, 255, 255, 0.1);
             color: #fff;

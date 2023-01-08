@@ -473,10 +473,6 @@ ol, ul {
     background-color: #2F303A;
     background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-bg-desktop.jpg");
     background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -1009,18 +1005,15 @@ ol, ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
   margin-top: 16px;
-  margin-left: 32px;
-  margin-right: 32px;
   gap: 10px;
 }
-@media screen and (min-width: 768px) {
-  .social {
-    margin: 0px;
-  }
+.social--footer {
+  margin-top: 0px;
 }
 .social__link {
   display: -webkit-box;
@@ -1058,7 +1051,6 @@ ol, ul {
           justify-content: center;
   width: 44px;
   height: 44px;
-  margin: 0;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
@@ -1218,20 +1210,20 @@ ol, ul {
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
-  width: 450px;
-  height: 294px;
+  max-width: 450px;
+  max-height: 294px;
   margin: 0px;
 }
 @media screen and (min-width: 768px) {
   .portfolio__thumb {
-    width: 354px;
-    height: 294px;
+    max-width: 354px;
+    max-height: 294px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__thumb {
-    width: 370px;
-    height: 294px;
+    max-width: 370px;
+    max-height: 294px;
   }
 }
 .portfolio__thumb > .portfolio__label {
