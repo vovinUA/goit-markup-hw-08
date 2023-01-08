@@ -1,0 +1,115 @@
+.section--team {
+    background-color: $teamBg;
+}
+.team {
+
+    &__card {
+    background-color: #fff;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2),
+                0 1px 1px rgba(0, 0, 0, 0.14),
+                0 1px 3px rgba(0, 0, 0, 0.12);
+    }
+
+    &__thumb {
+        max-width: 450px;
+    }
+    
+    &__desc {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    }
+
+    &__title {
+    color: $titleColor;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 10px;
+    }
+
+    &__text {
+    color: $textColor;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    }
+}
+@media screen and (min-width: $tablet) {
+    .team {
+
+        &__card {
+        background-color: #fff;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2),
+                    0 1px 1px rgba(0, 0, 0, 0.14),
+                    0 1px 3px rgba(0, 0, 0, 0.12);
+        }
+
+        &__thumb {
+            max-width: 354px;
+        }
+        
+        &__desc {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        }
+
+        &__title {
+        color: $titleColor;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        margin-bottom: 10px;
+        }
+
+        &__text {
+        color: $textColor;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;
+        }
+    }
+}
+@media screen and (min-width: $desktop) {
+    .team {
+
+        &__card {
+        background-color: #fff;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2),
+                    0 1px 1px rgba(0, 0, 0, 0.14),
+                    0 1px 3px rgba(0, 0, 0, 0.12);
+        }
+
+        &__thumb {
+            max-width: 270px;
+        }
+
+        &__desc {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        }
+
+        &__title {
+        color: $titleColor;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        margin-bottom: 10px;
+        }
+
+        &__text {
+        color: $textColor;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;
+        }
+    }
+}

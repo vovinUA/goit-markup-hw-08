@@ -1,0 +1,24 @@
+.address__link {
+    line-height:1.7;
+    color:#fff;
+    font-style: normal;
+    text-decoration: none;
+    transition: $transDur $transTime;
+
+    &:hover,
+    &:focus {
+    line-height:1.7;
+    color: $accentColor;
+    transition: $transDur $transTime;
+    }
+}
+.address__item {
+    margin-bottom: 9px;
+}
+.footer__contacts {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+}

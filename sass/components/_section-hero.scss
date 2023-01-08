@@ -1,0 +1,84 @@
+.hero {
+    background-color: $accentBg;
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-bg-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 767px;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../images/hero-bg-mobile@2x.jpg');
+    }
+    @media screen and (min-width: $tablet) {
+        background-color: $accentBg;
+        background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-bg-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-width: 1199px;
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx)  {
+            background-image: url('../images/hero-bg-tablet@2x.jpg');
+        }
+    }
+    @media screen and (min-width: $desktop) {
+        background-color: $accentBg;
+        background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-bg-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/hero-bg-desktop@2x.jpg');
+        }
+    }
+
+    &__title {
+    color:#fff;
+    font-size: 26px;
+    line-height: calc(42/26);
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    @media screen and (min-width: $desktop) {
+        font-size: 44px;
+        line-height: calc(60/44);
+        }
+    }
+    &__button {
+    margin-top:30px;
+    background-color: $accentColor;
+    font-size: 16px;
+    line-height: calc(30/16);
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-style:solid;
+    border-color: $accentColor;
+    border-radius: 0.3em;
+    color:#fff;
+    cursor: pointer;
+    padding: 10px 32px;
+    transition: $transDur $transTime;
+    }
+        &__button:hover,
+        &__button:focus {
+        background-color:#fff;
+        border-radius: 0.3em;
+        color: $accentColor;
+        border-color: #fff;
+        transition: $transDur $transTime;
+    }
+}
