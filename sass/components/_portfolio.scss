@@ -37,16 +37,16 @@
 .portfolio__thumb {
     position: relative;
     overflow: hidden;
-    width: 450px;
-    height: 294px;
+    max-width: 450px;
+    max-height: 294px;
     margin:0px;
     @media screen and (min-width: $tablet) {
-        width: 354px;
-        height: 294px;
+        max-width: 354px;
+        max-height: 294px;
     }
     @media screen and (min-width: $desktop) {
-        width: 370px;
-        height: 294px;
+        max-width: 370px;
+        max-height: 294px;
     }
 
     & > .portfolio__label {
