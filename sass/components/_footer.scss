@@ -8,18 +8,10 @@
         background-color: transparent;
         margin-right: 0px;
         margin-left: 0px;
-        @media screen and (min-width: $tablet) {
-            margin-right: 0px;
-            margin-left: 105px;
-        }
-        @media screen and (min-width: $desktop) {
-            margin-right: 23px;
-            margin-left: 0px;
-        }
     }
 
     &__address {
-        min-width: 232px;
+        width: 232px;
     }
 }
 .footer-blocks {
@@ -30,6 +22,7 @@
     text-align: center;
     @media screen and (min-width: $tablet) {
         align-items: baseline;
+        justify-content: space-around;
     }
     @media screen and (min-width: $desktop) {
         flex-wrap: nowrap;
