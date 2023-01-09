@@ -134,7 +134,7 @@ ol, ul {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   margin-top: 10px;
@@ -158,7 +158,7 @@ ol, ul {
 }
 .mobile-menu__container {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background-color: #fff;
@@ -175,6 +175,7 @@ ol, ul {
   padding-top: 42px;
   padding-left: 40px;
   padding-bottom: 48px;
+  overflow: hidden;
 }
 .mobile-menu__icon-close:hover, .mobile-menu__icon-close:focus {
   fill: #2196F3;
