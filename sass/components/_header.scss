@@ -6,7 +6,7 @@
 }
 .mobile-menu {
     display: inline-flex;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     margin-top: 10px;
@@ -32,7 +32,7 @@
 
     &__container {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         background-color: #fff;
@@ -43,8 +43,7 @@
             flex-wrap: wrap;
             width: 100vw;
             height: 100vh;
-            align-items: flex-end;
-            padding-top: 0px;
+            padding-top: 42px;
             padding-left: 40px;
             padding-bottom: 48px;
         }
@@ -56,11 +55,17 @@
     }
 }
 .mobile-menu__nav {
+    display: block;
     width: 100vw;
 
-    &-middle {
-        margin-bottom: 64px;
+    &--middle {
+        margin-top: auto;
     }
+
+    &--bottom {
+        margin-top: 64px;
+    }
+
     &--social {
         display: flex;
         gap: 10px;
